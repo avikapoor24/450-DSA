@@ -1,0 +1,35 @@
+Index: Java/ApniKaksha/array1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Learning;\nimport java.util.*;\n\npublic class array1 {\n    public static void main(String[] args){\n\n        //define\n        Scanner sc = new Scanner(System.in);\n        System.out.println(\"Enter Size of array\");\n        int n = sc.nextInt();\n\n        //input\n        int arr[] = new int[n];\n        for(int i=0;i<n;i++){\n            System.out.println(\"Enter the \"+ i +\"th element\");\n            arr[i] = sc.nextInt();\n        }\n\n        //print\n        System.out.println(\"Printing Array\");\n        for(int i=0;i<n;i++){\n            System.out.print(arr[i]+\" \");\n        }\n        System.out.println();\n\n        System.out.println(\"Select 1 of the Questions [just enter the no.]\");\n        System.out.println(\"1. Print th value at 'x' th index.\");\n        System.out.println(\"2. Take an input array from the user. Search for a given number x and print at which index it occurs\");\n        System.out.println();\n\n        System.out.print(\"Enter a no. \");\n        String ques = sc.next();\n        switch (ques){\n            case\"1\":\n            {\n                //Qs. Print 'x' th index\n                System.out.println(\"What index value you want to print\");\n                int x = sc.nextInt();\n\n                for(int i=0;i<n;i++){\n                    if (i == x){\n                        System.out.println(\"Your Required value: \"+arr[i]);\n                    }\n                }\n                break;\n            }\n            case \"2\":{\n                System.out.println(\"Enter the value you want to search for\");\n                int x = sc.nextInt();\n\n                for(int i=0;i<n;i++){\n                    if (arr[i] == x){\n                        System.out.println(\"Your Required value: \"+i);\n                    }\n                }\n                break;\n            }\n            default: {\n                System.out.println(\"Enter a valid question no.\");\n            }\n        }\n\n        \n    }\n}\n
+===================================================================
+diff --git a/Java/ApniKaksha/array1.java b/Java/ApniKaksha/array1.java
+--- a/Java/ApniKaksha/array1.java	
++++ b/Java/ApniKaksha/array1.java	
+@@ -28,7 +28,7 @@
+         System.out.println("2. Take an input array from the user. Search for a given number x and print at which index it occurs");
+         System.out.println();
+ 
+-        System.out.print("Enter a no. ");
++        System.out.print("Enter Question no. ");
+         String ques = sc.next();
+         switch (ques){
+             case"1":
+@@ -53,13 +53,15 @@
+                         System.out.println("Your Required value: "+i);
+                     }
+                 }
++                break;
++            }
++            case "3":{
++
+                 break;
+             }
+             default: {
+                 System.out.println("Enter a valid question no.");
+             }
+         }
+-
+-        
+     }
+ }

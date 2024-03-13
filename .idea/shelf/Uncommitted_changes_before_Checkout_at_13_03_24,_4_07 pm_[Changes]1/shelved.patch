@@ -1,0 +1,16 @@
+Index: Java/450-DSA/bit_wise_op1.java
+===================================================================
+diff --git a/Java/450-DSA/bit_wise_op1.java b/Java/450-DSA/bit_wise_op1.java
+new file mode 100644
+--- /dev/null	
++++ b/Java/450-DSA/bit_wise_op1.java	
+@@ -0,0 +1,8 @@
++import java.util.*;
++package Qsgfg;
++
++class bit_wise_op1{
++    public static void main(String[] args){
++        System.out.println("Hey");
++    }
++}
+\ No newline at end of file
