@@ -6,6 +6,7 @@ Input: arr[] = [2, 3, 1, 20, 15], k = 4
 Output: 15
 Explanation: 4th smallest element in the given array is 15.
 */
+// Code works on online compiler
 #include <iostream>
 #include <climits>
 using namespace std;
