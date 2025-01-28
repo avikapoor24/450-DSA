@@ -42,6 +42,7 @@ int KthSmallest(int arr[], int n, int k)
     }
     return -1;
 }
+
 int main()
 {
     int n = 6;
